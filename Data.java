@@ -32,8 +32,8 @@ public class Data{
         int countOuter = 0;
         int countInner = 0;
         for(int row=0; row<grid[0].length; row++){
-            for(int col=0; col<grid.length-1; col++){
-                if(grid[col][row]<grid[col])
+            for(int col=0; col<grid.length; col++){
+                if(grid[row][col]<grid[row][col])
             }
 
             if(countInner == grid.length) countOuter++;
